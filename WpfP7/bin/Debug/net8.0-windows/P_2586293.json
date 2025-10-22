@@ -1,0 +1,22 @@
+{
+  "Id": 2586293,
+  "Name": "\u0410\u0440\u0442\u0443\u0440",
+  "LastName": "\u041C\u0435\u043D\u044C\u0448\u0438\u043A\u043E\u0432",
+  "MiddleName": "\u0410\u043D\u0434\u0440\u0435\u0435\u0432\u0438\u0447",
+  "Birthday": "01.01.2005",
+  "PhoneNumber": "\u002B79002148175",
+  "AppointmentStories": [
+    {
+      "Date": "22.10.2025",
+      "DoctorId": 38444,
+      "Diagnosis": "\u0428\u0438\u0437\u043E\u0444\u0440\u0435\u043D\u0438\u044F",
+      "Recommendations": "\u0442\u0430\u0431\u043B\u0435\u0442\u043A\u0438"
+    },
+    {
+      "Date": "22.10.2025",
+      "DoctorId": 94479,
+      "Diagnosis": "\u0422\u0443\u0431\u0435\u0440\u043A\u0443\u043B\u0435\u0437",
+      "Recommendations": "\u0442\u0430\u0431\u043B\u0435\u0442\u043A\u0438"
+    }
+  ]
+}
