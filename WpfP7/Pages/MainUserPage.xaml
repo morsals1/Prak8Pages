@@ -11,7 +11,7 @@
 
         <GroupBox Header="Информация о докторе" Margin="10">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding CurrentDoctor.LastName}" FontWeight="Bold" Margin="5"/>
+                <TextBlock Text="{Binding CurrentDoctor.LastName}" Margin="5"/>
                 <TextBlock Text="{Binding CurrentDoctor.Name}" Margin="5"/>
                 <TextBlock Text="{Binding CurrentDoctor.MiddleName}" Margin="5"/>
                 <TextBlock Text="-" Margin="5"/>
@@ -32,7 +32,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Margin="5">
-                        <TextBlock FontWeight="Bold" Text="{Binding LastName}"/>
+                        <TextBlock Text="{Binding LastName}"/>
                         <TextBlock Text="{Binding Name}"/>
                         <TextBlock Text="{Binding MiddleName}"/>
                         <TextBlock Text="{Binding PhoneNumber}" FontSize="10" Foreground="Gray"/>
@@ -41,4 +41,5 @@
             </ListView.ItemTemplate>
         </ListView>
     </Grid>
+    
 </Page>

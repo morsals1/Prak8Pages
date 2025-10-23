@@ -16,7 +16,7 @@
 
         <GroupBox Grid.Row="0" Grid.ColumnSpan="2" Header="Информация о пациенте" Margin="5">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding CurrentPatient.LastName}" FontWeight="Bold" Margin="5"/>
+                <TextBlock Text="{Binding CurrentPatient.LastName}" Margin="5"/>
                 <TextBlock Text="{Binding CurrentPatient.Name}" Margin="5"/>
                 <TextBlock Text="{Binding CurrentPatient.MiddleName}" Margin="5"/>
                 <TextBlock Text="-" Margin="5"/>
@@ -49,9 +49,10 @@
                         <Border BorderBrush="LightGray" BorderThickness="1" Margin="2" Padding="5">
                             <StackPanel>
                                 <TextBlock Text="{Binding Date}" FontWeight="Bold"/>
-                                <TextBlock Text="{Binding Diagnosis}" TextWrapping="Wrap"/>
-                                <TextBlock Text="{Binding Recommendations}" TextWrapping="Wrap" FontSize="10" Foreground="Gray"/>
-                                <TextBlock Text="{Binding DoctorId, StringFormat='Доктор: {0}'}" FontSize="10" Foreground="Blue"/>
+                                <TextBlock Text="{Binding Diagnosis}"/>
+                                <TextBlock Text="{Binding Recommendations}" FontSize="10" Foreground="Gray"/>
+                                <TextBlock Text="{Binding FullName}" FontSize="10" Foreground="Gray"/>
+                                <TextBlock Text="{Binding DoctorId}" FontSize="10" Foreground="Gray"/>
                             </StackPanel>
                         </Border>
                     </DataTemplate>

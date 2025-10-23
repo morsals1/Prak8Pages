@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
+using System.Security.Authentication;
 using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
@@ -19,11 +20,9 @@ namespace WpfP7.Pages
         {
             CurrentDoctor = doctor;
             CurrentPatient = patient;
-            Patients = patients;
-            
+            Patients = patients;       
             InitializeComponent();
             DataContext = this;
-
             NewAppointment.Date = DateTime.Now.ToString("dd.MM.yyyy");
             NewAppointment.DoctorId = doctor.Id;
         }
@@ -41,13 +40,13 @@ namespace WpfP7.Pages
             {
                 Date = NewAppointment.Date,
                 DoctorId = CurrentDoctor.Id,
-                Diagnosis = NewAppointment.Diagnosis,
+                Diagnosis = NewAppointment.Diagnosis,  
+                FullName = $"{CurrentDoctor.Name} {CurrentDoctor.MiddleName} {CurrentDoctor.LastName}",
                 Recommendations = NewAppointment.Recommendations
             });
 
 
             SavePatientToFile(CurrentPatient);
-
 
             var index = Patients.IndexOf(CurrentPatient);
             if (index >= 0)

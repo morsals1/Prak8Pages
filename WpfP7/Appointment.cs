@@ -34,6 +34,20 @@ namespace WpfP7
             }
         }
 
+        private string _fullName = "";
+        public string FullName
+        {
+            get => _fullName;
+            set
+            {
+                if (_fullName != value)
+                {
+                    _fullName = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         private string _diagnosis = "";
         public string Diagnosis
         {
